@@ -39,7 +39,7 @@ console.log("Hello, " + visitorName + "! Your favorite animal is " + visitorFavo
 // const visitorFavoriteAnimal = prompt("What is your favorite animal?");
 
 // Ask the user for their favorite animal
-const visitorFavoriteAnimal = prompt("What is your favorite animal?");
+
 
 // Create a sentence using both answers
 console.log("Hello, " + visitorName + "! Your favorite animal is " + visitorFavoriteAnimal + ".");
