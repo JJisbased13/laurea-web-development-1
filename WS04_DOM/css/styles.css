@@ -169,3 +169,33 @@ tbody tr:nth-child(even) {
         width: 100%;
     }
 }
+
+/* --------------------------------------------------
+   BONUS TASKS
+-------------------------------------------------- */
+
+/* Move the animal image */
+.move-image {
+    transform: translateX(150px);
+}
+
+/* Animate the animal image */
+.animate-image {
+    animation: animalMove 1s infinite alternate;
+}
+
+@keyframes animalMove {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(100px);
+    }
+}
+
+/* Fade the animal image */
+.fade-image {
+    opacity: 0.2;
+    transition: opacity 0.5s;
+}
