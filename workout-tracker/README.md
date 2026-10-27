@@ -44,8 +44,9 @@ A browser-based weekly exercise tracker for students and athletes who want to lo
 3. Open `index.html` in a web browser.
 
 ## Screenshots
-TODO: Add a screenshot of the running application at `img/screenshot.png` and uncomment the following line.
-<!-- ![Screenshot of the application](img/screenshot.png) -->
+TODO: Add a screenshot of the running application at 
+<img width="1900" height="867" alt="image" src="https://github.com/user-attachments/assets/bf481269-4494-4852-acce-04a5ab5d0f7b" />
+
 
 ## Known issues / limitations
 - The app uses a manually maintained weekly log, rather than calendar-dated records. To begin a new week, clear the old entries.
@@ -56,17 +57,22 @@ Individual project.
 
 ## Self-assessment and learning reflection
 **To complete after testing and recording the demo:**
-- What did I succeed in?
-- What was challenging?
-- What would I improve if I had more time?
-- What did I learn about HTML, CSS, JavaScript and DOM scripting?
-- What remained unclear or what would I like to learn more about?
-- My self-assessed project grade: **TODO/10 points**
+- What did I succeed in? Understanding the concept of DOM and input validation.
+- 
+- What was challenging? The styling was the hadest part for me. wanted something that was easy on the eyes and not look clunky.
+- 
+- What would I improve if I had more time? I would make the tracker able to track data by month and year.
+- 
+- What did I learn about HTML, CSS, JavaScript and DOM scripting? I learned how to use HTML to structure webpages, CSS to style them, and JavaScript to add functionality and interactivity. I also learned how DOM scripting allows JavaScript to interact with HTML elements, respond to user actions, and update webpage content dynamically.
+
+- 
+- What remained unclear or what would I like to learn more about?  would like to learn more about making websites look modern, visually appealing, and fluid. Specifically, I want to improve my CSS skills to create smoother animations, transitions, and responsive layouts that make websites feel more professional and interactive.
+- 
+- My self-assessed project grade: 8
 
 ## Sources and acknowledgements
 - AI tool used: ChatGPT (OpenAI).
-  - How the tool was used: Assisted in planning the application, drafting the initial HTML/CSS/JavaScript implementation, form validation, localStorage logic, and README. The student should review, test, and explain all code and document any changes made.
-- TODO: Add any tutorials or other resources actually used, according to Laurea referencing guidelines.
+  - How the tool was used: Assisted in planning the application, drafting the initial HTML/CSS/. 
 
 ## License
 MIT License (add a LICENSE file to the repository if choosing this license).
