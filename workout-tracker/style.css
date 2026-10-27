@@ -1,0 +1,357 @@
+
+/* ===================================
+   WEEKLY WORKOUT TRACKER
+   Main Stylesheet
+=================================== */
+
+/* General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    line-height: 1.6;
+}
+
+/* Main container */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* ===================================
+   HEADER
+=================================== */
+
+header {
+    margin-bottom: 30px;
+}
+
+.eyebrow {
+    color: #a78bfa;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 21px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.muted {
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* ===================================
+   WEEKLY STATISTICS
+=================================== */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 25px;
+}
+
+.stats article {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 22px;
+}
+
+.stats span {
+    display: block;
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.stats strong {
+    display: block;
+    font-size: 30px;
+    color: #c4b5fd;
+}
+
+/* ===================================
+   MAIN COLUMNS
+=================================== */
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 25px;
+}
+
+/* General panel styling */
+.panel {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 25px;
+}
+
+/* ===================================
+   WORKOUT FORM
+=================================== */
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    background-color: #0f172a;
+    color: #f8fafc;
+    border: 1px solid #475569;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #a78bfa;
+}
+
+input::placeholder {
+    color: #64748b;
+}
+
+/* Validation error messages */
+.error {
+    display: block;
+    color: #f87171;
+    font-size: 12px;
+    min-height: 18px;
+    margin-bottom: 12px;
+}
+
+/* Invalid input styling */
+.invalid {
+    border: 2px solid #ef4444 !important;
+    background-color: #450a0a;
+}
+
+/* ===================================
+   BUTTONS
+=================================== */
+
+button {
+    background-color: #8b5cf6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 13px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #7c3aed;
+}
+
+/* Secondary buttons */
+button.secondary {
+    background-color: #334155;
+    color: #f8fafc;
+}
+
+button.secondary:hover {
+    background-color: #475569;
+}
+
+/* ===================================
+   CATEGORY CHART
+=================================== */
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.chart-row {
+    margin-bottom: 8px;
+}
+
+.chart-label {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.chart-bar {
+    width: 100%;
+    height: 12px;
+    background-color: #334155;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.chart-fill {
+    height: 100%;
+    background-color: #8b5cf6;
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+/* ===================================
+   WORKOUT HISTORY
+=================================== */
+
+.history {
+    margin-bottom: 25px;
+}
+
+.heading-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.heading-row h2 {
+    margin-bottom: 0;
+}
+
+.workout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    margin-bottom: 12px;
+    background-color: #0f172a;
+    border: 1px solid #334155;
+    border-radius: 8px;
+}
+
+.workout-info {
+    flex: 1;
+}
+
+.workout-info strong {
+    display: block;
+    font-size: 16px;
+}
+
+.workout-info span {
+    display: block;
+    color: #94a3b8;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.delete-btn {
+    background-color: #7f1d1d;
+    color: white;
+    padding: 8px 12px;
+    font-size: 13px;
+}
+
+.delete-btn:hover {
+    background-color: #991b1b;
+}
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer {
+    text-align: center;
+    color: #64748b;
+    font-size: 13px;
+    padding: 20px 0;
+}
+
+/* ===================================
+   RESPONSIVE DESIGN
+=================================== */
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .columns {
+        grid-template-columns: 1fr;
+    }
+
+    .stats {
+        gap: 10px;
+    }
+
+    .stats article {
+        padding: 15px;
+    }
+
+    .stats strong {
+        font-size: 24px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 25px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .panel {
+        padding: 18px;
+    }
+
+    .heading-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .workout-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .delete-btn {
+        width: 100%;
+    }
+}
