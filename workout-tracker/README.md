@@ -18,7 +18,7 @@ A browser-based weekly exercise tracker for students and athletes who want to lo
 ![Wireframe](img/wireframe.png)
 
 ## Web links
-- **Published application:** TODO: Insert GitHub Pages URL
+- **Published application:** TODO: https://jjisbased13.github.io/laurea-web-development-1/workout-tracker/
 - 
 - **GitHub repository:** TODO: https://github.com/JJisbased13/laurea-web-development-1/tree/main
 - 
