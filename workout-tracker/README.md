@@ -19,7 +19,9 @@ A browser-based weekly exercise tracker for students and athletes who want to lo
 
 ## Web links
 - **Published application:** TODO: Insert GitHub Pages URL
-- **GitHub repository:** TODO: Insert GitHub repository URL
+- 
+- **GitHub repository:** TODO: https://github.com/JJisbased13/laurea-web-development-1/tree/main
+- 
 - **Project video presentation:** https://teams.microsoft.com/l/meetingrecap?driveId=b%21G-Pu8uCxqkuvPvVzyUBlpUaESczOfSNNmg_BLe48m9XBH3YwbizkT519jIQ0FVG_&driveItemId=01F342OARV2EHVL3UP6NDYXUBQ2SQKWXSK&sitePath=https%3A%2F%2Flaureauas-my.sharepoint.com%2F%3Av%3A%2Fg%2Fpersonal%2Fjej00070_laurea_fi%2FIQA10Q9V7o_zR4vQMNSgq15KAS2yhIlBG9Jo80wqMXpEZ6I&fileUrl=https%3A%2F%2Flaureauas-my.sharepoint.com%2F%3Av%3A%2Fg%2Fpersonal%2Fjej00070_laurea_fi%2FIQA10Q9V7o_zR4vQMNSgq15KAS2yhIlBG9Jo80wqMXpEZ6I&threadId=19%3Ameeting_NWYyNWViMDItYjlkZi00NjE5LThlYzUtYzA1Y2EyMDVlMWUy%40thread.v2&organizerId=1caa9153-c0bc-40e1-af99-9fe1dcb93cd0&tenantId=f0b9e9d7-8d66-4b16-9c1c-6b07c4796280&callId=0f0d3318-384f-478f-9dbf-4ee5ee28e2b5&threadType=Meeting&meetingType=MeetNow&subType=RecapSharingLink_RecapChiclet&recapType=RecordingAndTranscript
 
 ## About the application
