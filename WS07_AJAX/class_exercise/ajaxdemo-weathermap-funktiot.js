@@ -1,6 +1,6 @@
 // Fetch weather data for a city using AJAX.
 function haeData(city) {
-    const tulos = document.getElementById("weatherdata");
+    const tulos = document.getElementById("cityWeatherData");
     city = city.trim();
 
     if (!city) {
@@ -68,8 +68,7 @@ function naytaData(json) {
         </table>
     `;
 
-    document.getElementById("weatherdata").innerHTML = rivit;
+    document.getElementById("cityWeatherData").innerHTML = rivit;
 }
 
 // Fetch the weather in Helsinki as soon as the page loads.
-haeData("Helsinki");

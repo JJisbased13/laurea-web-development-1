@@ -1,31 +1,44 @@
-// Add an event listener that waits for the page to finish loading.
-document.addEventListener('DOMContentLoaded', () => {
-    // Find the element whose id is Quotes.
-    const quoteContainer = document.getElementById('Quotes');
-    // Set the URI to the address from which the data will be fetched.
-    const uri = "https://dummyjson.com/quotes"
-    // Fetch data from the URI and handle the promise returned by fetch().
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const quoteContainer = document.getElementById("Quotes");
+
+    const uri = "https://dummyjson.com/quotes";
+
+    // Request quotes from the API
     fetch(uri)
-        .then(response => response.json())
-        .then(data => {
-            // Call displayCustomerInfo() to process the data and display it on the page.
-            displayCustomerInfo(data);
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Failed to fetch quotes");
+            }
+            return response.json();
         })
-        // If an error occurs, print it to the console.
+        .then(data => {
+            quoteContainer.textContent = "";
+
+            // Loop through the quotes
+            for (let i = 0; i < data.quotes.length; i++) {
+
+                const author = data.quotes[i].author;
+                const quote = data.quotes[i].quote;
+
+                // Create HTML elements
+                const quoteElement = document.createElement("div");
+                const heading = document.createElement("h2");
+                const paragraph = document.createElement("p");
+
+                heading.textContent = quote;
+                paragraph.textContent = author;
+
+                quoteElement.appendChild(heading);
+                quoteElement.appendChild(paragraph);
+                quoteElement.appendChild(document.createElement("hr"));
+
+                quoteContainer.appendChild(quoteElement);
+            }
+        })
         .catch(error => {
-            console.error('Error fetching customer data:', error);
+            console.error("Error fetching quotes:", error);
+            quoteContainer.textContent = "Unable to load quotes.";
         });
-    // Define displayCustomerInfo() to process the data and display it on the page.
-    function displayCustomerInfo(quoteData) {
-        // Loop through the quotes array and display each quote and its author.
-        console.log(quoteData);
-        for (let i = 0; i < quoteData.quotes.length; i++) {
-            const id = quoteData.quotes[i].author;
-            const quote = quoteData.quotes[i].quote;
-            // Create a div containing the quote and author, then add it to quoteContainer.
-            const quoteElement = document.createElement('div');
-            quoteElement.innerHTML = `<h2> ${quote} </h2> <p> ${id} </p><hr>`;
-            quoteContainer.appendChild(quoteElement);
-        };
-    }
 });

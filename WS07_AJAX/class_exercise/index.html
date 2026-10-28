@@ -1,21 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Quotes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workshop 07 - AJAX</title>
 </head>
-
 <body>
-    <h1>Quotes</h1>
-    <div id="Quotes"></div>
-    <div id="weatherdata">Loading weather data…</div>
-    
-    <div id="weatherdata">Loading weather data…</div>
+
+    <h1>Workshop 07 - AJAX</h1>
+
+    <h2>Exercise 1: Quotes</h2>
+    <div id="Quotes">Loading quotes...</div>
+
+    <hr>
+
+    <h2>Exercise 2: Helsinki Weather</h2>
+    <div id="weatherdata">Loading weather data...</div>
+
+    <hr>
+
+    <h2>Exercise 3: Search Weather by City</h2>
+
+    <label for="cityInput">Enter a city:</label>
+    <input type="text" id="cityInput" placeholder="e.g. Las Vegas">
+
+    <button type="button" id="searchWeather">Get Weather</button>
+
+    <div id="cityWeatherData"></div>
+
+    <hr>
+
+    <h2>Exercise 4: Finnish News (XML)</h2>
+    <div id="newsdata">Loading news...</div>
+
+    <script src="script.js"></script>
     <script src="ajaxdemo-weathermap.js"></script>
+    <script src="ajaxdemo-weathermap-funktiot.js"></script>
+    <script src="ajaxdemo-iltalehti.js"></script>
+
+    <script>
+        document.getElementById("searchWeather")
+            .addEventListener("click", function () {
+                const city = document.getElementById("cityInput").value;
+                haeData(city);
+            });
+    </script>
 
 </body>
-
-
-
 </html>
