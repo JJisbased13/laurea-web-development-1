@@ -41,3 +41,7 @@ footer { color: #52635d; }
   body { padding: 14px; }
   section { padding: 18px; }
 }
+.invalid {
+    border: 2px solid red;
+    background-color: #fff0f0;
+}
